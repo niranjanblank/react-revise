@@ -1,3 +1,4 @@
+import MyCapability from "./_components/MyCapability/MyCapability";
 import Overview from "./_components/Overview/Overview";
 import SideBar from "./_components/SideBar/side-bar";
 
@@ -15,7 +16,8 @@ const MyLearning = () => {
             <SideBar/>
             {/* for main */}
             <main className="col-span-5  px-2">
-                <Overview/>
+                {/* <Overview/> */}
+                <MyCapability/>
             </main>
         </div>
        
