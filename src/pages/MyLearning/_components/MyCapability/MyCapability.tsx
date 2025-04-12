@@ -1,5 +1,6 @@
 import { ClipboardList, Rocket } from "lucide-react";
 import CapabilityMenu from "./_components/capability-menu";
+import CapabilityDevelopmentModal from "./_components/CapabilityDevelopmentModal";
 
 const MyCapability = () => {
     return ( 
@@ -7,7 +8,9 @@ const MyCapability = () => {
         className="grid grid-cols-1"
         >
             <div className="grid grid-cols-2 gap-2">
-                <CapabilityMenu title="Capability Development" icon={Rocket}/>
+                <CapabilityDevelopmentModal>
+                    <CapabilityMenu title="Capability Development" icon={Rocket}/>
+                </CapabilityDevelopmentModal>
                 <CapabilityMenu title="Capability Assessment" icon={ClipboardList}/>
             </div>
         </div>
