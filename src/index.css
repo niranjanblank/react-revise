@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+body, p, span, div {
+    cursor: default;
+  }
